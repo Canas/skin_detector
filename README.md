@@ -29,4 +29,5 @@ Jones, M.J.; Rehg, J.M., "Statistical color models with application to skin dete
 Contact
 -------
 Cristobal Silva
+
 crsilva at ing dot uchile dot cl
