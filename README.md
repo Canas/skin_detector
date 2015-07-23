@@ -10,9 +10,12 @@ Notes
 Instructions
 ------------
 After compiling, the program has two ways of executing:
-	skin_detector demo
-	skin_detector imFile
+	- skin_detector demo
+	- skin_detector (image_path) (threshold)
 
+The first one calculates the ROC curve for all the images in the data folder, evaluating its ground truth vs the detector itself. The output of this execution can be seen in the output folder.
+
+The second one only processes the input image with the given threshold,. The ouput image with the skin detection can be seen on the same folder as the executable.
 
 
 References
@@ -22,21 +25,3 @@ Jones, M.J.; Rehg, J.M., "Statistical color models with application to skin dete
 Credits and licensing
 ---------------------
 Author: Cristobal Silva, crsilva at ing dot uchile dot cl
-
-----------------------------------------------
-Detector de Piel:
-- main.cpp : Programa principal
-- data.cpp/data.h : Funciones que entregan datos de modelo MoG y Nombre de Imagen de la BD
-
-El programa recorre las 45 imagenes de la base de datos y genera 45 archivos ROCdata_{nº de imagen}, ademas de entregar 45 imagenes test_{nº de imagen} con las detecciones de piel para un umbral Theta = 1.
-
-Si se desea revisar una sola imagen, se debe eliminar el loop for para la variable (int im) y generar un único (int im) con el número de la imagen desea (int im=1 para la imagen 0024)
-
-----------------------------------------------
-En  caso de problemas, se entregan en un .rar los 45 archivos de datos e imagenes generados por el codigo.
-----------------------------------------------
-
-Curvas ROC:
-- importROCdata.m : Importa los datos de los archivos ROCdata_{}.txt
-- ROC.m : Funcion que grafica curvas ROC y separa para umbrales mayores y menores a 1;
-- plotROCgeneral : Grafica en una Figura los 45 ROC y en otra Figura el ROC promedio de las 45 imagenes.
