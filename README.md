@@ -1,6 +1,6 @@
 Skin Detection using Mixture of Gaussians
 =========================================
-This code implements the Jones & Rehg algorithm in C++ using OpenCV 2.4.9. The code was originally developed as a homework for a Computer Vision course so it possesses no optimizations whatsoever and focused solely on working as intended.
+This code implements the Jones & Rehg algorithm in C++ using OpenCV 2.4.9. The code was originally developed as a homework for a Computer Vision course in 2014 so it possesses no optimizations whatsoever and focused solely on working as intended.
 
 Notes
 -----
@@ -26,6 +26,7 @@ References
 ----------
 Jones, M.J.; Rehg, J.M., "Statistical color models with application to skin detection," Computer Vision and pattern Recognition, 1999. IEEE Computer Society Conference on. , vol.1, no., pp.,280 Vol. 1, 1999
 
-Credits and licensing
----------------------
-Author: Cristobal Silva, crsilva at ing dot uchile dot cl
+Contact
+-------
+Cristobal Silva
+crsilva at ing dot uchile dot cl
