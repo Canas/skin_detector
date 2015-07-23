@@ -11,10 +11,10 @@ Instructions
 ------------
 After compiling, the program has two ways of executing:
 ```bash
-skin_detector demo
+./skin_detector demo
 ```
 ```bash
-skin_detector (image_path) (threshold)
+./skin_detector (image_path) (threshold)
 ```
 
 The first one calculates the ROC curve for all the images in the data folder, evaluating its ground truth vs the detector itself. The output of this execution can be seen in the output folder.
